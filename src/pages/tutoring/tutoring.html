@@ -15,10 +15,29 @@
   </h1>
   <div id="tutoring-markdown1" class="show-list-numbers-and-dots">
     <p style="color:#000000;">
-      Form Will Go Here<br> <!--Could be based on your schedule or if you view as a guest -->
-      Select Class<br> <!--drop down box generated from school schedule or the schools class list-->
-      Select Tutor<br> <!--drop down box generated from tutors list-->
+      <!--drop down box generated from school schedule or the schools class list-->
+      <ion-list>
+        <ion-item>
+          <ion-label>Select Class</ion-label>
+          <ion-select [(ngModel)]="classes">
+            <ion-option value="1">Class 1</ion-option>
+            <ion-option value="2">Class 2</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <!--drop down box generated from tutors list-->
+      <ion-list>
+        <ion-item>
+          <ion-label>Select Tutor</ion-label>
+          <ion-select [(ngModel)]="tutors">
+            <ion-option value="1">John Doe</ion-option>
+            <ion-option value="2">Jane Doe</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
       <button ion-button>Submit</button> <!--Takes you to tutorTimes.html or tutors.html-->
+
 
       <br><br>Note: * denotes online tutor
     </p>
